@@ -1,0 +1,23 @@
+{
+    "name": "sarowar/bkash",
+    "description": "A Laravel package for bKash payment gateway integration",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sarowar\\Bkash\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sarowar\\Bkash\\BkashServiceProvider"
+            ],
+            "aliases": {
+                "Bkash": "App\\Bkash\\Facades\\Bkash"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
