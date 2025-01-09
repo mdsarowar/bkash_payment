@@ -12,16 +12,11 @@
 1. Install the package via Composer:
    ```bash
    composer require sarowar/bkash
+   
+   php artisan vendor:publish --tag=controllers
+   
+   php artisan vendor:publish --tag=config
 
-
-Create Payment
-
-$data = [
-'amount' => '1000',
-'currency' => 'BDT',
-'intent' => 'sale',
-];
-$response = $bkash->create_payment($data);
 
 
 # License
